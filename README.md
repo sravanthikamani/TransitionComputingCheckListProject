@@ -69,21 +69,21 @@ To add or modify rules, follow these steps:
 
     Navigate to frontend/src/ChecklistDashboard.js and modify or add logic to handle new rules.
 ### Project structure
-project-folder/
-├── frontend/                # React App (Frontend)
-│   ├── src/
-│   │   ├── App.js           # Main React component
-│   │   ├── ChecklistDashboard.js  # Dashboard component to display results
-│   │   └── index.js         # Entry point for React app
-│   ├── public/              # Public assets (HTML, images, etc.)
-│   ├── package.json         # Frontend dependencies and configuration
-│   └── node_modules/        # Installed frontend dependencies
-│
-└── backend/                 # Express App (Backend)
-    ├── server.js            # Backend server to handle API requests
-    ├── checklistRules.js    # File containing checklist evaluation rules
-    ├── package.json         # Backend dependencies and configuration
-    └── node_modules/        # Installed backend dependencies
+    project-folder/
+    ├── frontend/                # React App (Frontend)
+    │   ├── src/
+    │   │   ├── App.js           # Main React component
+    │   │   ├── ChecklistDashboard.js  # Dashboard component to display results
+    │   │   └── index.js         # Entry point for React app
+    │   ├── public/              # Public assets (HTML, images, etc.)
+    │   ├── package.json         # Frontend dependencies and configuration
+    │   └── node_modules/        # Installed frontend dependencies
+    │
+    └── backend/                 # Express App (Backend)
+        ├── server.js            # Backend server to handle API requests
+        ├── checklistRules.js    # File containing checklist evaluation rules
+        ├── package.json         # Backend dependencies and configuration
+        └── node_modules/        # Installed backend dependencies
 ### Styling
 This project uses Bootstrap for styling the frontend. You can modify the styles by editing the  ChecklistDashboard.js files in the frontend/src/ directory.
 
