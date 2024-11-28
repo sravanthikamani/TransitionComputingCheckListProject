@@ -11,15 +11,15 @@ function ChecklistDashboard() {
         checklist: ['Valuation Fee Paid', 'UK Resident', 'Risk Rating Medium', 'LTV Below 60%'],
       });
       setResults(response.data.results);
-      setError(null); // Clear any previous errors
+      setError(null); 
     } catch (err) {
       setError('Failed to fetch data. Please try again.');
     }
   };
   
   const retryFetch = () => {
-    setError(null); // Clear the error
-    fetchResults(); // Retry the fetch
+    setError(null); 
+    fetchResults(); 
   };
   
   

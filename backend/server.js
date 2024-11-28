@@ -1,14 +1,14 @@
 const express = require('express');
 const axios = require('axios');
 const path = require('path');
-const checklistRules = require('./checklistRules'); // Import the checklist rules
+const checklistRules = require('./checklistRules'); 
 const app = express();
 
-app.use(express.json()); // Middleware for JSON parsing
+app.use(express.json()); 
 
-// Set EJS as the template engine
+
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views')); // Set views folder for EJS templates
+app.set('views', path.join(__dirname, 'views')); 
 
 const PORT = 3001;
 
@@ -55,7 +55,7 @@ app.post('/process-checklist', async (req, res) => {
       }
     });
 
-    // Send results as JSON instead of rendering EJS
+    
     res.json({ results });
 
   } catch (error) {
@@ -64,7 +64,7 @@ app.post('/process-checklist', async (req, res) => {
 });
 
 
-// Start the server
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });

@@ -93,6 +93,7 @@ Open src/ChecklistDashboard.js.
 Add custom styles or use Bootstrap classes as needed.
 
 ### Error Handling
+
 * Frontend:
 
     Displays an alert for API fetch failures.
