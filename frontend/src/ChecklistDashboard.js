@@ -7,9 +7,10 @@ function ChecklistDashboard() {
 
   const fetchResults = async () => {
     try {
-      const response = await axios.post('/process-checklist', {
+      const response = await axios.post('https://your-heroku-app.herokuapp.com/process-checklist', {
         checklist: ['Valuation Fee Paid', 'UK Resident', 'Risk Rating Medium', 'LTV Below 60%'],
       });
+      
       setResults(response.data.results);
       setError(null); 
     } catch (err) {
